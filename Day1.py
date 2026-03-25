@@ -28,6 +28,4 @@
 # age = int(input("Enter your age: "))
 # print(f"Hello {name}! You are {age} now.")
 
-'''5th Program'''
-#Simple Calculator
-#ABCDEFGHIJKLMNOPQRSTUVWXYZ
+

@@ -1,5 +1,6 @@
 '''Day 3: Loops Mastery'''
 
+#FOR LOOP QUESTIONS
 '''1st Program: 1 se 10 tak numbers print kro.'''
 # for i in range(1,11,1):
 #     print(i)
@@ -62,3 +63,42 @@
 #         print(f"{n} is not a prime number.")
 
 '''8th Program: Fibonacci Series.'''
+# n = int(input("Enter a number: "))
+# a,b = 0,1
+# for i in range(n):
+#     print(a,end=" ")
+#     a,b = b,a+b
+
+'''9th Program: Reverse a string without in build functions.'''
+# s = str(input("Enter a string: "))
+# print(f"Original string: {s}")
+# rev_str =""
+# for i in range(len(s),0,-1):
+#     rev_str += s[i-1]
+# print(f"Reversed string: {rev_str}")
+
+'''10th Program: Check palindrome.'''
+# s = str(input("Enter a string: "))
+# rev_str =""
+# for i in range(len(s),0,-1):
+#     rev_str += s[i-1]
+# if s == rev_str:
+#     print(f"{s} is a palindrome.")
+# else:
+#     print(f"{s} is not a palindrome.")
+
+'''11th Program: Count all letters, digits and special symbols from a given string.'''
+# s = str(input("Enter a string: "))
+# chars,digits,symbols = 0,0,0
+# for i in range(len(s)):
+#     if s[i].isdigit():
+#         digits += 1
+#     elif s[i].isalpha():
+#         chars += 1
+#     else:
+#         symbols += 1
+# print(f"No. of Chars = {chars}\nNo. of Digits = {digits}\nNo. of Symbols = {symbols}")
+
+''''''''''''''''''
+#WHILE LOOP QUESTIONS
+'''1st Program: Separate each digit of a number and print it on the new line.'''

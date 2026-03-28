@@ -102,3 +102,47 @@
 ''''''''''''''''''
 #WHILE LOOP QUESTIONS
 '''1st Program: Separate each digit of a number and print it on the new line.'''
+# num = int(input("Enter a number: "))
+# while num>0:
+#     print(num%10)
+#     num //= 10
+
+'''2nd Program: Accept a number and prints its reverse.'''
+# num = int(input("Enter a number: "))
+# org_num = num
+# rev = 0
+# while num>0:
+#     rev = rev*10 + (num%10)
+#     num //= 10
+# print(f"Original no. is {org_num}\nReversed no. is {rev}")
+
+'''3rd Program: Check the given number if it is palindromic or not.'''
+# num = int(input("Enter a number: "))
+# org_num = num
+# rev = 0
+# while num>0:
+#     rev = rev*10 + (num%10)
+#     num //= 10
+# if rev == org_num:
+#     print(f"{org_num}, is a palindromic number.")
+# else:
+#     print(f"{org_num}, is not a palindromic number.")
+
+'''4th Program: Random Guesing Game'''
+# import random
+
+# rand = random.randint(1,10)
+# attempts = 1
+# user_input = int(input("Enter a number b/w 1 and 10: "))
+
+# while user_input != rand:
+#     # user_input = int(input(("Nope! Try again: ")))
+#     if rand > user_input:
+#         user_input = int(input(("Nope! Try a little higher number: ")))
+#         attempts += 1
+#     elif rand < user_input:
+#         user_input = int(input(("Nope! Try a littel lower number: ")))
+#         attempts += 1
+
+# print(f"Yay! you guessed it right in {attempts} attempts.\nRandom no. was {rand}.")
+        

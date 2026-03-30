@@ -67,4 +67,34 @@ l = [1,2,3,4,5,6]
 
 # print(f"Original lis is: {lst}\nReversed list is: {reversed_list}. ")
 
-'''9th Problem: '''
+'''9th Problem: Remove duplicates from the list.'''
+# l = [1,2,3,4,2,1,3,5]
+# new_list = []
+# for element in l:
+#     if element not in new_list:
+#         new_list.append(element)
+
+# print(f"Original List: {l}\nList without duplicates: {new_list}")
+        
+'''10th Problem: Find the second largest number in the list.'''
+# l = [21,34443,5656,87987,231,123]
+# largest = l[0]
+# second_largest = l[0]
+# for i in l:
+#     if i > largest:
+#         second_largest = largest
+#         largest = i
+# print(f"Largest no. {largest}\n2nd largest no. {second_largest}")
+        
+'''11th Problem: Check if list is sorted.'''
+# #l = [1,2,3,4,6,8,9]
+# l = [1,3443,5,65,12,31]
+# sorted_hai = True
+# for i in range(len(l)-1):
+#     if l[i] > l[i+1]:
+#         sorted_hai = False
+#         break
+# if sorted_hai:
+#     print(f"Given list {l} is sorted.")
+# else:
+#     print(f"Given list {l} is not sorted.")

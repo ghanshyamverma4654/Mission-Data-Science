@@ -1,7 +1,7 @@
 '''Dictionary Mastery'''
 #Dictionary Problems
 '''Problem: Create a dictionary: student and perform different operations.'''
-student = {
+'''student = {
     "student1":{
     "name":"Atlas",
     "age":25,
@@ -43,4 +43,4 @@ total_marks = 0
 for key in student:
     print(key,student[key])
     total_marks += student[key]["marks"]
-print(f"Total marks of all student: {total_marks}")
+print(f"Total marks of all student: {total_marks}")'''

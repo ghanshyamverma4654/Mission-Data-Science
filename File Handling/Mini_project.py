@@ -103,17 +103,19 @@ print("Enter 3 to UPDATE a file: ")
 print("Enter 4 to DELETE a file: ")
 
 choice = int(input("Enter your choice: "))
+try:
+    if choice == 1:
+        createfile()
+        
+    elif choice == 2:
+        readfile()
 
-if choice == 1:
-    createfile()
-    
-elif choice == 2:
-    readfile()
+    elif choice == 3:
+        updatefile()
 
-elif choice == 3:
-    updatefile()
-
-elif choice == 4:
-    deletefile()
-else:
-    print("Invalid choice.")
+    elif choice == 4:
+        deletefile()
+    else:
+        print("Invalid choice.")
+except Exception as error:
+    print(f"An error occured as: {error}")

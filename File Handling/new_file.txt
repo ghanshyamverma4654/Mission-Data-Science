@@ -1,0 +1,2 @@
+Writing in the file. And now i am appending in the file.
+Second line to read.

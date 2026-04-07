@@ -1,4 +1,4 @@
-'''CRUD OPERATION IN FILE HANDLING'''
+'''CRUD OPERATION IN FILE '''
 
 
 '''This 👇 library will provide the functionallity to check the path of the files'''
@@ -103,19 +103,17 @@ print("Enter 3 to UPDATE a file: ")
 print("Enter 4 to DELETE a file: ")
 
 choice = int(input("Enter your choice: "))
-try:
-    if choice == 1:
-        createfile()
-        
-    elif choice == 2:
-        readfile()
 
-    elif choice == 3:
-        updatefile()
+if choice == 1:
+    createfile()
+    
+elif choice == 2:
+    readfile()
 
-    elif choice == 4:
-        deletefile()
-    else:
-        print("Invalid choice.")
-except Exception as error:
-    print(f"An error occured as: {error}")
+elif choice == 3:
+    updatefile()
+
+elif choice == 4:
+    deletefile()
+else:
+    print("Invalid choice.")

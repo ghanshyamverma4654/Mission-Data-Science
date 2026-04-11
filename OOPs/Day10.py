@@ -199,4 +199,65 @@
                         Cannot be accessed from outside of the class - only inside class
                         We use 2 underscore(__) before the name to make it private.
 '''
+# class Demo:
+#     def __init__(self):
+#         self.name = "Public Member" #===> Public
+#         self._age = 30 #===> Protected
+#         self.__salary = 50000 #===> Private
+        
+#     def show(self):
+#         print("Inside the class: ")
+#         print("Public: ", self.name)
+#         print("Protected: ", self._age)
+#         print("Private: ", self.__salary)
 
+# object = Demo()
+# object.show() #===> Output => Prints everything inside this method
+# print(object.name) #===> Output => Public Member
+# print(object._age) #===> Output => 30
+# print(object.__salary) #===> Output => AttributeError: 'Demo' object has no attribute '__salary'
+
+
+'''ABSTRACTION: Used to simplifying complex systems by focusing on essential features and hiding _______________ unnecessary details.
+               => This feature does not exists in python but we can achieve it using a library - "abc"
+               
+   ABSTRACT =>
+            CLASSES: Classes that contains one or more abstract methods.
+            METHODS: Method that defined but not implemented in the abstract class. But subclass must ________ provide the implementation.
+               
+               '''
+
+# from abc import ABC, abstractmethod
+
+# class Animal(ABC): #===> Abstract Class
+#     @abstractmethod
+#     def make_sound(self): #===> Abstract Method
+#         pass
+
+# class Dog(Animal):
+#     def make_sound(self):
+#         # return super().make_sound()
+#         print("Dog says Woof!")
+
+# class Cat(Animal):
+#     def make_sound(self):
+#         # return super().make_sound()
+#         print("Cat says Meow!")
+
+# object = Dog()
+# obj1 = Cat()
+
+# object.make_sound() #===> Output => Dog says Woof!
+# obj1.make_sound() #===> Output => Cat says Meow!
+
+
+'''DUNDER METHODS:
+               > Special methods starts and ends with double underscores(__)
+               > like -> __init__, __str__, __add__, etc.
+               > Automatically  get called when we perform certain action on an object.
+                Helps us:
+                       > Customize behaviour of the class
+                       > Makes class object behave like built in data types
+                         (like -> string, lists, etc.)
+
+'''

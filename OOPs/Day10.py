@@ -261,3 +261,8 @@
                          (like -> string, lists, etc.)
 
 '''
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
+# p = Person("SHYAM")
+# print(p.name) #===> Output => SHYAM

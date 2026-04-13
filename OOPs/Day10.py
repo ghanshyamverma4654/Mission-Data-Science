@@ -199,4 +199,59 @@
                         Cannot be accessed from outside of the class - only inside class
                         We use 2 underscore(__) before the name to make it private.
 '''
+# class Demo:
+#     def __init__(self):
+#          self.name = "Public Member" # Public
+#          self._age = 21              # Protected
+#          self.salary = 50000         # Private
+         
+#     def show(self):
+#         print("Inside the class: ") #===> Output => Inside the class:
+#         print("Public:", self.name) #===> Output => Public: Public Member
+#         print("Protected:", self._age) #===> Output => Protected: 21
+#         print("Private:", self.__salary) #===> 
+#         #===> AttributeError: 'Demo' object has no attribute '_Demo__salary'
+
+# object = Demo()
+# object.show()
+
+'''ABSTRACTION: 
+            => Astraction doesn't exist in python but we can achieve using a library ___"abc" as 'ABC'
+            => Is used to simplifying complex system by focusing on essential ___features and hiding unnecessary details.
+            => Is used to define a common interface for different subclasses.
+   ABSTRACT: 
+            => CLASSES: Class that contains 1 or more abstract methods.
+            => METHODS: A method defined but not implemented in the abstract class.
+                => Subclasses must provide the implementation.
+'''
+
+# from abc import ABC,abstractmethod
+
+# class Animal(ABC):
+#     @abstractmethod
+#     def make_sound(self):
+#         pass
+
+# class Dog(Animal):
+#     def make_sound(self):
+#         print("Dog says Woof!")
+# class Cat(Animal):
+#     def make_sound(self):
+#         print("Cat says Meow!")
+        
+# obj = Dog()
+# obj1 = Cat()
+
+# obj.make_sound() #===> Output => Dog says Woof!
+# obj1.make_sound() #===> Output => Cat says Meow!
+
+'''
+DUNDER METHODS: Special methods starts and ends with double underscore(__).
+'''
+# class Person:
+#     def __init__(self,name):
+#         self.name = name
+
+# p = Person("Ravi")
+# print(p.name) #===> Output => Ravi
 
